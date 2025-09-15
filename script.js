@@ -295,16 +295,50 @@ class Menu {
         return this.#calculateTotal();
     }
 }
-// వేరువేరు orders
-let order1 = new Menu(2, 3); // 2 Burgers, 3 Fries
-let order2 = new Menu(1, 5); // 1 Burger, 5 Fries
-let order3 = new Menu(3, 0); // 3 Burgers మాత్రమే
 
-// Console లో output
+let order1 = new Menu(2, 3); 
+let order2 = new Menu(1, 5); 
+let order3 = new Menu(3, 0); 
+
 console.log("Order 1 Total: ₹" + order1.totalCost);
 console.log("Order 2 Total: ₹" + order2.totalCost);
 console.log("Order 3 Total: ₹" + order3.totalCost);
 
+// Global Method
+let uri= "https://www.example.com/submit?name=maaike van putten";
+let encoded_uri=encodeURI(uri);
+console.log("Encoded",encoded_uri);
+let decoded_uri=decodeURI(encoded_uri);
+console.log("decoded",decoded_uri);
+
+let str_int="6";
+let int_int=parseInt(str_int);
+console.log("Type of",int_int, "is", typeof int_int);
+
+
+// Array Method
+let arr6=["cat", 4, "bag", 90, true];
+function printStuff(element,index){
+    console.log("Print Stuff:",element, "on array position", index);
+}
+arr6.forEach(printStuff);
+
+
+let arr7 = ["squirrel", 5, "Tjed", new Date(), true];
+function checkString(element, index) {
+ return typeof element === "string";
+}
+let filterArr = arr7.filter(checkString);
+console.log(filterArr)
+
+
+
+let arr9=[1, 2, 3, 4]
+let mapped_arr=arr9.map(x=>x+1);
+console.log(mapped_arr);
+
+let bb = ["so", "bye", "bye", "love"];
+console.log(bb.lastIndexOf("bye"));
 
 
 
